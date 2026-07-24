@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+/*
+ * LEVEL 1: BEGINNER
+ * Concepts covered: variables, data types, taking user input, print statements
+ */
+public class HelloWorld {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("=== Welcome to My First Java Program ===");
+
+        // Taking basic input from user
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine();
+
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt();
+
+        System.out.print("Enter your CGPA: ");
+        double cgpa = scanner.nextDouble();
+
+        // Displaying the collected information
+        System.out.println("\n--- Your Details ---");
+        System.out.println("Name : " + name);
+        System.out.println("Age  : " + age);
+        System.out.println("CGPA : " + cgpa);
+
+        // Simple conditional logic
+        if (cgpa >= 3.5) {
+            System.out.println("Great job! You're doing excellent in your studies.");
+        } else if (cgpa >= 2.5) {
+            System.out.println("You're doing well, keep improving!");
+        } else {
+            System.out.println("Work harder, you can do better!");
+        }
+
+        scanner.close();
+    }
+}
